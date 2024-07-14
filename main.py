@@ -135,6 +135,5 @@ if __name__ == '__main__':
     app.debug = True
     app.threaded = True
     threading.Thread(target=run_app).start()
-asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
-
-asyncio.run(main())
+    asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+    asyncio.run(main())
