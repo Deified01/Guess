@@ -1,0 +1,6 @@
+flask
+telethon
+uvloop
+nest_asyncio
+pymongo
+diskcache
