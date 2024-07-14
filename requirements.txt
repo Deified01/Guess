@@ -4,3 +4,4 @@ uvloop
 nest_asyncio
 pymongo
 diskcache
+cryptg
