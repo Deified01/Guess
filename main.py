@@ -128,12 +128,8 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World'
 
-def run_app():
-    app.run(host='0.0.0.0', port=10000)
 
 if __name__ == '__main__':
-    app.debug = True
-    app.threaded = True
-    threading.Thread(target=run_app).start()
+    app.run(host='0.0.0.0', port=10000)
     asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
     asyncio.run(main())
