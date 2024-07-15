@@ -90,6 +90,7 @@ async def main():
                 if "🎉 Bonus! You've reached a streak of 10⚡️ and earned an additional 100 tokens!" == message_text:
                     #Pussy
                     await event.client.send_message(event.chat_id, "/pbonus")
+                    await asyncio.sleep(2)
         except Exception as e:
             logging.error(f"Error processing /pbonus message: {e}")
             await event.client.send_message(event.chat_id, "Sorry, an error occurred while processing your request.")
@@ -102,6 +103,7 @@ async def main():
                 if "Correct" and "Current" in message_text:
                     #Pussy
                     await event.client.send_message(event.chat_id, "/guess")
+                    await asyncio.sleep(2)
         except Exception as e:
             logging.error(f"Error processing /guess message: {e}")
             await event.client.send_message(event.chat_id, "Sorry, an error occurred while processing your request.")
@@ -110,9 +112,10 @@ async def main():
     async def time_up_handler(event):
         try:
             message_text = alphanumeric(event.message.message)
-            if "Times" in message_text and "up" in message_text:
+            if "Times" and "up" in message_text:
                 #j
                 await event.client.send_message(event.chat_id, "/guess")
+                await asyncio.sleep(300)
         except Exception as e:
             logging.error(f"Error processing 'Time's up' message: {e}")
             await event.client.send_message(event.chat_id, "Sorry, an error occurred while processing your request.")
