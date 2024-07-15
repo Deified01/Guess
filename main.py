@@ -17,8 +17,8 @@ nest_asyncio.apply()
 # Telegram API credentials
 api_id = 8447214
 api_hash = '9ec5782ddd935f7e2763e5e49a590c0d'
-string_session = "1BVtsOIQBu4fptwJ-g1-1cdl38_94JtPiDQ8SplOGHFt5mIY5T-yzJZUOoc1odu6k2XPaXe4_B0pmWPIrxAEpkWtGsusQeTyUzckSPa9m-_Z7ApAm5jK0Ee_-dNoeaSjfrRuLVDvlHCmQl8-Rdi_CeFb4DbL4bkPQhX6GNplBi7XA8cGSKPN9bmITsowryES9NqGk2YiljO_4xD3xkvIMVDE-s4DZ8ZC-dVpEifNkB9zepg_bDapu-10nmNrQ7IFLR9PGoh8YAWsJTZYgSe4P4JjDAxWHO1aurCCwfjDYqKnTcTl6442or7PsHX6eZxiqlOFBN3nSzoH7GhC0dDitECs5wUwjFQU="
-
+string_sebssion = "1BVtsOIQBu4fptwJ-g1-1cdl38_94JtPiDQ8SplOGHFt5mIY5T-yzJZUOoc1odu6k2XPaXe4_B0pmWPIrxAEpkWtGsusQeTyUzckSPa9m-_Z7ApAm5jK0Ee_-dNoeaSjfrRuLVDvlHCmQl8-Rdi_CeFb4DbL4bkPQhX6GNplBi7XA8cGSKPN9bmITsowryES9NqGk2YiljO_4xD3xkvIMVDE-s4DZ8ZC-dVpEifNkB9zepg_bDapu-10nmNrQ7IFLR9PGoh8YAWsJTZYgSe4P4JjDAxWHO1aurCCwfjDYqKnTcTl6442or7PsHX6eZxiqlOFBN3nSzoH7GhC0dDitECs5wUwjFQU="
+string_session = os.getenv("string")
 # MongoDB credentials
 mongo_uri = "mongodb+srv://xmon77:fF5ew07G0pll9YI3@cluster0.1travym.mongodb.net/?retryWrites=true&w=majority"
 
