@@ -69,7 +69,7 @@ async def main():
                 if character_name:
                     parts = character_name.split()
                     shortest_part = min(parts, key=len)
-                    await asyncio.sleep(2)
+                    await asyncio.sleep(1.5)
                     logging.info(f"Character found: {shortest_part}")
                     #h
                     if shortest_part.lower() == "d":
